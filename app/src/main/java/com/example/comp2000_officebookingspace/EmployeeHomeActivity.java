@@ -19,6 +19,19 @@ public class EmployeeHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_employee_home);
         Button searchButton = findViewById(R.id.searchAvailabilityButton);
         Button searchNavButton = findViewById(R.id.searchNavButton);
+        Button viewBookingsButton = findViewById(R.id.viewBookingsButton);
+        Button bookingsNavButton = findViewById(R.id.bookingsNavButton);
+
+        View.OnClickListener openBookings = v -> {
+            Intent intent = new Intent(
+                    EmployeeHomeActivity.this,
+                    MyBookingsActivity.class
+            );
+            startActivity(intent);
+        };
+
+        viewBookingsButton.setOnClickListener(openBookings);
+        bookingsNavButton.setOnClickListener(openBookings);
 
         View.OnClickListener openSearch = v -> {
             Intent intent = new Intent(EmployeeHomeActivity.this,
