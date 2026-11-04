@@ -1,16 +1,13 @@
 package com.example.comp2000_officebookingspace;
 
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
 
 public class SearchAvailabilityActivity extends AppCompatActivity {
 
@@ -45,5 +42,5 @@ public class SearchAvailabilityActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
-
     }
+}
