@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available rooms"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#26364A"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wednesday, 18 November 2026 | 10:00 - 11:00"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All room types - 7 rooms shown in this example"
+            android:textSize="13sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a room"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#26364A"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/availableRoomsGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/meetingRoom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meeting Room 1 - Available"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/meetingRoom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meeting Room 2 - Available"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/meetingRoom3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meeting Room 3 - Available"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/meetingRoom4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meeting Room 4 - Available"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/meetingRoom5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meeting Room 5 - Available"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/seminarRoom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seminar Room 1 - Available"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/seminarRoom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seminar Room 2 - Available"
+                android:padding="12dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request room"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#26364A"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purpose of booking"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/purposeInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="e.g. Project catch-up"
+            android:padding="12dp"
+            android:background="#F3F5F8"/>
+
+        <Button
+            android:id="@+id/submitBookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Submit booking request"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your booking request will be sent to your manager for approval."
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -5,7 +5,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-
+import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
@@ -37,9 +37,12 @@ public class SearchAvailabilityActivity extends AppCompatActivity {
                         "Please select a room type",
                         Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this,
-                        "Search details entered successfully!",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(
+                        SearchAvailabilityActivity.this,
+                        AvailableRoomsActivity.class
+                );
+
+                startActivity(intent);
             }
         });
     }
