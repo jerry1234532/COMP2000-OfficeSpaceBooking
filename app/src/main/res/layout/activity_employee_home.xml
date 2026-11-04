@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, Employee"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#26364A"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find a meeting or seminar room for your next session."
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="18dp"/>
+
+            <Button
+                android:id="@+id/searchAvailabilityButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Search availability"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking requests are sent to your manager for approval."
+                android:textSize="12sp"
+                android:textColor="#777777"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="28dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your next booking"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#26364A"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="#F3F5F8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting Room 5"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#26364A"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday, 19 November 2026"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09:00 – 10:00 | Weekly planning"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    android:textColor="#26734D"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Awaiting approval"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#26364A"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="#F3F5F8"
+                android:text="Meeting Room 2\nWednesday, 18 November 2026\nPending - Project catch-up"
+                android:textSize="14sp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#444444"/>
+
+            <Button
+                android:id="@+id/viewBookingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="View my bookings"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F3F5F8">
+
+        <Button
+            android:id="@+id/homeNavButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"/>
+
+        <Button
+            android:id="@+id/searchNavButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search"/>
+
+        <Button
+            android:id="@+id/bookingsNavButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My bookings"/>
+
+    </LinearLayout>
+
+</LinearLayout>
