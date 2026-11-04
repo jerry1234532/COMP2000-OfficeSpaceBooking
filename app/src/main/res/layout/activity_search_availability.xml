@@ -1,0 +1,150 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search availability"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#26364A"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose when you need a room. Results will show rooms with no overlapping confirmed bookings."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:padding="12dp"
+            android:background="#F3F5F8"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start time"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/startTimeInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="10:00"
+                    android:inputType="time"
+                    android:padding="12dp"
+                    android:background="#F3F5F8"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End time"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/endTimeInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="11:00"
+                    android:inputType="time"
+                    android:padding="12dp"
+                    android:background="#F3F5F8"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room type"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/roomTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/allRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All rooms"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/meetingRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting rooms"/>
+
+            <RadioButton
+                android:id="@+id/seminarRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seminar rooms"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/searchRoomsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Search available rooms"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
