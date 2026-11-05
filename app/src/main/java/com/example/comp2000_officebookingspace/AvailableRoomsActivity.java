@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.EditText;
 import android.widget.Button;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class AvailableRoomsActivity extends AppCompatActivity {
 
@@ -52,10 +53,12 @@ public class AvailableRoomsActivity extends AppCompatActivity {
 
             RadioButton selectedRoom = findViewById(selectedId);
 
-            Toast.makeText(this,
-                    "Request submitted for " +
-                            selectedRoom.getText().toString(),
-                    Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(
+                    AvailableRoomsActivity.this,
+                    BookingConfirmationActivity.class
+            );
+
+            startActivity(intent);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
